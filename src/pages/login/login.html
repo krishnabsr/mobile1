@@ -1,0 +1,45 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header  >
+  <ion-toolbar color= "primary" >
+      <ion-navbar>
+          <ion-title style="text-align: center" >Login</ion-title>
+        </ion-navbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding class="page" >
+  <ion-grid>
+      <form class="inputForm" >
+          <ion-list>
+            <ion-item>
+              <ion-label > Email Address </ion-label>
+              <ion-input  type="email" [(ngModel)] ="this.email" name = "email" required  > </ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label> Password  </ion-label>
+              <ion-input type="password" [(ngModel)] = "this.password" name = "password" required >  </ion-input>
+            </ion-item>
+          </ion-list>
+        </form>
+  </ion-grid>
+
+  <div padding >
+     
+       &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  <button  ion-button round color="primary" (click) = "login(this.email,this.password)" > Login </button>
+       &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+ 
+    <a (click)="forgotPage(this.email)" > Forgot password </a> 
+  </div>
+ 
+  
+  <div padding > 
+    <button (click)="signupPage()" color= "danger" ion-button round end full > Sign Up </button>
+  </div>
+  
+</ion-content>

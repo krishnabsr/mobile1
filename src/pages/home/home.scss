@@ -1,0 +1,66 @@
+page-home {
+    .magazines {
+        margin: 2px;
+        background-color: #c5cadd;
+        padding-bottom: 16px; 
+       
+        .heading {
+        //  background-color: lightsalmon;
+          text-align: center;
+          padding-block-end: color;
+          padding-left: 20px;
+        //  .square {
+        //      width: 50px;
+        //      height: 50px;
+        //      background-color: blue;
+        //  }
+          
+        }
+        
+    }
+    .books {
+        margin: 16px;
+        //background-color: orange;
+        padding-bottom: 16px;
+        .heading{
+          //background-color: lightblue;
+          text-align: center;
+          padding-block-end: color;
+          padding-left: 20px;
+        }
+    }
+    .study {
+        margin : 16px;
+        //background-color: lightcoral;
+        padding-bottom: 16px;
+        .heading{
+          //background-color: lightblue;
+          text-align: center;
+          padding-block-end: color;
+          padding-left: 20px;
+        }
+     
+    }
+    .literature {
+        margin : 16px;
+        //background-color: plum;
+        padding-bottom: 16px;
+        .heading{
+          //background-color: lightcoral;
+          text-align: center;
+          padding-block-end: color;
+          padding-left: 20px;
+        }
+    }
+    .exams {
+        margin: 16px;
+        //background-color: goldenrod;
+        padding-bottom: 16px;
+        .heading{
+          //background-color: lightcoral;
+          text-align: center;
+          padding-block-end: color;
+          padding-left: 20px;
+         }
+        }
+    }

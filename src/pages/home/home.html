@@ -1,0 +1,120 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar color = "primary" >
+
+      <button ion-button menuToggle icon-only>
+        <ion-icon name='menu'></ion-icon>
+      </button>
+  <ion-title> Notnul </ion-title>
+  <ion-buttons end>
+      <button ion-button icon-only>
+      <ion-icon name="search"></ion-icon>
+    </button>
+  </ion-buttons>
+  
+  </ion-toolbar>
+  
+
+</ion-header>
+<ion-content padding class="page">
+
+<ion-card>
+  <div class= "containermags" >
+      <div class="card11" >
+          <ion-badge class="box" > 
+              <h2 style="position:relative;top:15px; bottom:5px; " > &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Magazines 
+              </h2>
+            </ion-badge>
+      </div>
+        <ion-card-content class="card1">
+            <div>
+                <ion-slides slidesPerView="4" spaceBetween="7" class=" div-slides" >
+                    <ion-slide *ngFor = "let image of imageURL" >
+                      <img class="slides"  src = "{{image.ThumbnailURL}}" item-height="20px" item-width="10px" (click)="gotoSearch(image.FullName)">
+                    </ion-slide>
+                  </ion-slides>    
+            </div>
+          </ion-card-content>
+  </div>
+</ion-card>
+<ion-card>
+  <div class="containerbooks" >
+    <div class="card11" >
+      <ion-badge class="box" >
+        <h2 style="position:relative;top:15px; bottom:5px; " > &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Books
+      </h2>
+      </ion-badge>
+    </div>
+    <ion-card-content class="card2" >
+        <ion-slides slidesPerView="4" spaceBetween="7" class=" div-slides" >
+            <ion-slide *ngFor = "let book of booksHome " >
+              <img class="slides" src = "{{book.ThumbnailURL}} " item-height="20px" item-width="20px"  (click)="gotoSearch(book.FullName)" >
+            </ion-slide>
+          </ion-slides>
+    </ion-card-content>
+  </div>
+</ion-card>
+<ion-card>
+  <div class="containerlits" >
+    <div class="card11" >
+      <ion-badge class="box" >
+        <h2 style="position:relative;top:15px; bottom:5px; " > &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Indian Literature
+      </h2>
+    </ion-badge>
+    </div>
+    <ion-card-content class="card3" >
+            <ion-slides slidesPerView="4" spaceBetween="7" class=" div-slides" >
+                <ion-slide *ngFor = "let literature of literatureBooks" >
+                  <img class="slides" src = "{{literature.ThumbnailURL}} " item-height="20px" item-width="20px"  (click)="gotoSearch(literature.FullName)" >
+                </ion-slide>
+              </ion-slides>
+      </ion-card-content>
+  </div>
+</ion-card>
+<ion-card>
+  <div class="containerexams">
+    <div class="card11" >
+      <ion-badge class="box" >
+        <h2 style="position:relative;top:15px; bottom:5px; " > &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         Competitive Exams
+      </h2>
+    </ion-badge>
+    </div>
+    <ion-card-content class="card4" >
+      <ion-slides slidesPerView="4" spaceBetween="7" class=" div-slides"  >
+        <ion-slide *ngFor = "let competitive of competitiveBooks " >
+            <img class="slides" src = "{{competitive.ThumbnailURL}} " ion-item item-height=" 20px" item-width="50px" height= "20px" width="20px" (click)="gotoSearch(competitive.FullName)" >
+        </ion-slide>
+    </ion-slides>
+    </ion-card-content>
+  </div>
+</ion-card>
+<ion-card>
+  <div class="containerstudy" >
+    <div class="card11" >
+      <ion-badge class="box" >
+        <h2 style="position:relative;top:15px; bottom:5px; " > &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Study Materials
+      </h2>
+    </ion-badge>
+    </div>
+    <ion-card-content class="card5" >
+      <ion-slides slidesPerView="4" spaceBetween="7" class=" div-slides" >
+        <ion-slide *ngFor = "let image of imageStudy" >
+          <img class="slides" src = "{{image.ThumbnailURL}} " item-height="20px" item-width="20px"  (click)="gotoSearch(image.FullName)" >
+        </ion-slide>
+      </ion-slides>
+    </ion-card-content>
+  </div>
+</ion-card>
+
+
+</ion-content>
